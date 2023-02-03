@@ -1,0 +1,14 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --hue: 184;
+  --bg: hsl(var(--hue),10%,90%);
+  --fg: hsl(var(--hue),66%,24%);
+  --primary: hsl(var(--hue),66%,44%);
+  --gradient: linear-gradient(145deg, hsl(var(--hue),10%,85%), hsl(var(--hue),10%,100%));
+  font-size: 16px;
+}

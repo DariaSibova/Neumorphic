@@ -25,3 +25,39 @@ body {
   place-items: center;
   padding: 1.5em 0 0 0;
 }
+
+body:after {
+  content: "";
+  display: block;
+  height: 1.5em;
+  width: 100%;
+}
+
+
+.app,
+.header,
+.main__date-nav,
+.main__stat-row,
+.main__stat-graph,
+.footer {
+  display: flex;
+}
+.header,
+.main__date-nav,
+.footer {
+  justify-content: space-between;
+}
+
+.header__profile-btn,
+.header__notes-btn,
+.main__date-arrow-btn,
+.main__date-edit-btn,
+.footer__nav-btn {
+  background: transparent;
+  display: flex;
+  outline: transparent;
+  transition: all 0.15s linear;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}

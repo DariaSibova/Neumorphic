@@ -120,7 +120,6 @@ body:after {
    stroke: url("#ring");
 }
 
-
 .ring-stroke {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
@@ -150,4 +149,27 @@ body:after {
   overflow: hidden;
   width: 1px;
   height: 1px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.header__profile-btn,
+.header__notes-btn {
+  width: 3em;
+  height: 3em;
+}
+.header__profile-btn {
+  border-radius: 1em;
+  box-shadow: 0 0 0 0.125em inset;
+}
+.header__notes-btn {
+  margin-right: -1em;
+}
+.header__profile-btn:active,
+.header__notes-btn:active {
+  transform: scale(0.9);
 }

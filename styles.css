@@ -308,3 +308,28 @@ body:after {
   animation-name: ringFill;
   animation-timing-function: ease-in;
 }
+
+/* Footer */
+.footer {
+  margin-top: auto;
+}
+.footer__nav-btn {
+  background: var(--gradient);
+  border-radius: 50%;
+  box-shadow: 
+    1em 1em 2em hsl(var(--hue),5%,65%),
+    -1em -1em 2em hsl(0,0%,100%);
+  width: 3em;
+  height: 3em;
+}
+.footer__nav-btn:active {
+  box-shadow: 
+    0.75em 0.75em 1.5em hsl(var(--hue),5%,65%),
+    -0.75em -0.75em 1.5em hsl(0,0%,100%);
+  transform: scale(0.9);
+}
+.footer__nav-btn:focus .icon circle,
+.footer__nav-btn:focus .icon path {
+  fill: var(--primary);
+}
+

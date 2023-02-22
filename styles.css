@@ -173,3 +173,16 @@ body:after {
 .header__notes-btn:active {
   transform: scale(0.9);
 }
+
+.header__profile-btn:focus {
+  box-shadow: 0 0 0 0.125em var(--primary) inset;
+}
+.header__profile-icon {
+  border-radius: 0.5em;
+  margin: auto;
+  width: 2em;
+  height: 2em;
+}
+.header__notes-btn:focus .icon path {
+  fill: var(--primary);
+}

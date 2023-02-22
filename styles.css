@@ -119,3 +119,35 @@ body:after {
 .ring-fill {
    stroke: url("#ring");
 }
+
+
+.ring-stroke {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  stroke: url("#ring");
+}
+.ring-stroke--steps {
+  animation-name: stepCount;
+}
+.ring-stroke--cals {
+  animation-name: cals;
+}
+
+.ring-stroke--miles {
+  animation-name: miles;
+}
+.ring-stroke--mins {
+  animation-name: mins;
+}
+.ring-stroke--stepHrs {
+  animation-name: stepHrs;
+}
+.ring-track {
+  stroke: hsl(var(--hue),10%,80%);
+}
+.sr-only {
+  clip: rect(1px,1px,1px,1px);
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}

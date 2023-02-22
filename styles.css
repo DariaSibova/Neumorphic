@@ -186,3 +186,46 @@ body:after {
 .header__notes-btn:focus .icon path {
   fill: var(--primary);
 }
+
+/* Main */
+.main__date-nav {
+  margin-bottom: 1.5em;
+}
+.main__date-arrow-btn,
+.main__date-edit-btn {
+  height: 1.5em;
+}
+.main__date-arrow-btn {
+  width: 1.5em;
+}
+.main__date-arrow-btn:active .icon path,
+.main__date-arrow-btn:focus .icon path {
+  fill: var(--primary);
+}
+.main__date {
+  text-transform: uppercase;
+}
+.main__date-edit-btn {
+  min-width: 1.5em;
+}
+.main__date-edit-btn:active,
+.main__date-edit-btn:focus {
+  color: var(--primary);
+}
+.main__stat-blocks {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1.5em;
+  margin-bottom: 1.5em;
+}
+.main__stat-block {
+  aspect-ratio: 1 / 1;
+  background: var(--gradient);
+  border-radius: 1.5em;
+  box-shadow:
+    -0.75em -0.75em 2.25em hsl(0,0%,100%),
+    0.75em 0.75em 2.25em hsl(var(--hue),5%,65%);
+  padding: 0.75em;
+  text-align: center;
+  width: 100%;
+}

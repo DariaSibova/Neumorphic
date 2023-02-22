@@ -76,3 +76,23 @@ body:after {
   height: 1px;
 }
 
+.icon {
+  display: block;
+  margin: auto;
+  width: 1.5em;
+  height: 1.5em;
+}
+.icon circle,
+.icon path {
+  fill: currentColor;
+  transition: fill 0.15s linear;
+}
+.icon ellipse,
+.icon polygon {
+  stroke: currentColor;
+  transition: stroke 0.15s linear;
+}
+.icon .no-fill {
+  fill: none;
+  stroke: currentColor;
+}

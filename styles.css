@@ -371,3 +371,88 @@ body:after {
   }
 }
 
+/* Animations */
+@keyframes statFill {
+  from {
+    color: var(--fg);
+  }
+  to {
+    color: hsl(var(--hue),66%,94%);
+  }
+}
+@keyframes ringFill {
+  from {
+    r: 82px;
+    stroke-width: 16;
+  }
+  to {
+    r: 45px;
+    stroke-width: 90;
+  }
+}
+@keyframes stepCount {
+  from {
+    stroke-dashoffset: 515.22;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes cals {
+  from {
+    stroke-dashoffset: 163.36;
+  }
+  to {
+    stroke-dashoffset: 12.25;
+  }
+}
+@keyframes miles {
+  from {
+    stroke-dashoffset: 163.36;
+  }
+  to {
+    stroke-dashoffset: 35.39;
+  }
+}
+@keyframes mins {
+  from {
+    stroke-dashoffset: 163.36;
+  }
+  to {
+    stroke-dashoffset: 65.34;
+  }
+}
+@keyframes bpm {
+  from {
+    transform: scale(0);
+  }
+  37.5% {
+    transform: scale(1.2);
+  }
+  75%,
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes stepHrs {
+  from {
+    stroke-dashoffset: 131.95;
+  }
+  to {
+    stroke-dashoffset: 52.78;
+  }
+}
+@keyframes pulse {
+  from,
+  75%,
+  to {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+

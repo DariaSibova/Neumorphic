@@ -333,3 +333,41 @@ body:after {
   fill: var(--primary);
 }
 
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(var(--hue),10%,10%);
+    --fg: hsl(var(--hue),66%,94%);
+    --primary: hsl(var(--hue),66%,44%);
+    --gradient: linear-gradient(145deg, hsl(var(--hue),10%,15%), hsl(var(--hue),10%,30%));
+  }
+  .app {
+    background: hsl(var(--hue),10%,20%);
+  }
+  .icon--red path {
+    fill: hsl(3,90%,65%);
+  }
+  .ring-track {
+    stroke: hsl(var(--hue),10%,30%);
+  }
+  .main__stat-block,
+  .main__stat-row .main__stat-graph {
+    box-shadow:
+      -0.75em -0.75em 2.25em hsl(var(--hue),10%,30%),
+      0.75em 0.75em 2.25em hsl(var(--hue),5%,5%);
+  }
+  .main__stat-subtext {
+    color: hsl(var(--hue),10%,70%);
+  }
+  .footer__nav-btn {
+    box-shadow: 
+      -1em -1em 2em hsl(var(--hue),10%,30%),
+      1em 1em 2em hsl(var(--hue),5%,5%);
+  }
+  .footer__nav-btn:active {
+    box-shadow: 
+      -0.75em -0.75em 1.5em hsl(var(--hue),10%,30%),
+      0.75em 0.75em 1.5em hsl(var(--hue),5%,5%);
+  }
+}
+

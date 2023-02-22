@@ -293,3 +293,18 @@ body:after {
 .main__stat-subtext {
   color: hsl(var(--hue),10%,30%);
 }
+
+.main__stat-graph--filled,
+.main__stat-graph--filled .ring-fill {
+  animation-duration: 0.3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.main__stat-graph--filled {
+  animation-name: statFill;
+  animation-timing-function: linear;
+}
+.main__stat-graph--filled .ring-fill {
+  animation-name: ringFill;
+  animation-timing-function: ease-in;
+}

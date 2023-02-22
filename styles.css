@@ -229,3 +229,67 @@ body:after {
   text-align: center;
   width: 100%;
 }
+
+
+.main__stat-block--lg {
+  aspect-ratio: 2 / 1;
+  grid-column: 1 / 4;
+  padding: 1.5em;
+}
+.main__stat-rows,
+.main__stat-row {
+  margin-bottom: 1.5em;
+}
+.main__stat-row {
+  align-items: center;
+}
+.main__stat-graph {
+  margin: 0 auto 0.75em auto;
+  position: relative;
+  width: 3.75em;
+  height: 3.75em;
+}
+.main__stat-graph .main__stat-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+}
+.main__stat-block--lg .main__stat-graph {
+  margin: auto;
+  width: 11.25em;
+  height: 11.25em;
+}
+.main__stat-block--lg .icon {
+  margin: 0 auto;
+  width: 2.25em;
+  height: 2.25em;
+}
+.main__stat-row .main__stat-graph {
+  background: var(--gradient);
+  border-radius: 1em;
+  box-shadow: 
+    -0.75em -0.75em 2.25em hsl(0,0%,100%),
+    0.75em 0.75em 2.25em hsl(var(--hue),5%,65%);
+  margin: 0 1.5em 0 0;
+}
+.main__stat-value,
+.main__stat-unit {
+  display: block;
+}
+.main__stat-value {
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+.main__stat-block--lg .main__stat-value {
+  font-size: 2em;
+  line-height: 1.5;
+}
+.main__stat-unit,
+.main__stat-subtext {
+  font-weight: 300;
+}
+.main__stat-subtext {
+  color: hsl(var(--hue),10%,30%);
+}

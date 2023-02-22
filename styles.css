@@ -96,3 +96,26 @@ body:after {
   fill: none;
   stroke: currentColor;
 }
+
+.icon--red path {
+  fill: hsl(3,90%,55%);
+}
+.icon--pulse {
+  animation:
+    bpm 1s linear,
+    pulse 0.75s 1s linear infinite;
+}
+.ring,
+.sr-only {
+  position: absolute;
+}
+
+.ring {
+  display: block;
+  inset: 0;
+  width: 100%;
+  height: auto;
+}
+.ring-fill {
+   stroke: url("#ring");
+}
